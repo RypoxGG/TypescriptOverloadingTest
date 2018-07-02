@@ -5,7 +5,10 @@ import { AbstractImplementation } from "./base/AbstractImplementation";
 export class Tools {
     public static testInterface(param1: string, param2: (item: ISomeInterface) => boolean): ISomeInterface | undefined;
     public static testInterface<T extends AbstractImplementation>(param1: (new (...params: any[]) => T), param2: (item: T) => boolean): T | undefined;
-    public static testInterface<T extends AbstractImplementation>(param1: (new (...params: any[]) => T) | string, param2: (item: T | ISomeInterface) => boolean): T | ISomeInterface | undefined {
+    public static testInterface<T extends AbstractImplementation>(
+        param1: (new (...params: any[]) => T) | string,
+        param2: (item: T | ISomeInterface) => boolean
+    ): T | ISomeInterface | undefined {
         const type = typeof param1;
         if (typeof param1 === "string") {
             console.log("oh ein string");
