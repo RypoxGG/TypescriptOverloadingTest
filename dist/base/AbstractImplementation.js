@@ -17,12 +17,12 @@ class AbstractImplementation {
     get name() {
         return this.constructor.name;
     }
-    get ImplementationCheck() {
-        return "Implemented";
+    get typeSafer() {
+        return undefined;
     }
     ;
 }
 __decorate([
     enumerable(false)
-], AbstractImplementation.prototype, "ImplementationCheck", null);
+], AbstractImplementation.prototype, "typeSafer", null);
 exports.AbstractImplementation = AbstractImplementation;

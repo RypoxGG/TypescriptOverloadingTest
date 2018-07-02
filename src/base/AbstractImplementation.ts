@@ -17,7 +17,7 @@ export abstract class AbstractImplementation implements ISomeInterface {
     }
 
     @enumerable(false)
-    private get ImplementationCheck(): string {
-        return "Implemented";
+    private get typeSafer(): undefined {
+        return undefined;
     };
 }

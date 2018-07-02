@@ -8,8 +8,8 @@ export class RealImplementation extends AbstractImplementation {
         this.bar = b;
     }
     [attr: string]: string | undefined;
-    foo: string;
-    bar: string;
+    public foo: string;
+    public bar: string;
 }
 
 export class SomeInterfaceImplementation implements ISomeInterface {
