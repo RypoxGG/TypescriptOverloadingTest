@@ -1,0 +1,14 @@
+{
+  "name": "OverloadingTest",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^10.5.1",
+    "reflect-metadata": "^0.1.12"
+  }
+}
